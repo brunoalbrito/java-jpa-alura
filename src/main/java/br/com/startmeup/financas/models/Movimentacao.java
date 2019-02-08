@@ -9,8 +9,6 @@ import java.util.List;
 
 @Data
 @Entity
-@NamedQuery(query="SELECT AVG(m.valor) FROM Movimentacao m WHERE m.conta = :pConta" +
-        " AND m.tipo = :pTipo GROUP BY m.data ",name = "MediasPorDiaETipo")
 public class Movimentacao {
 
 
